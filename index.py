@@ -6,3 +6,4 @@ print("the List of command line args",argv)
 for val in argv:
     print(val)
     
+    
