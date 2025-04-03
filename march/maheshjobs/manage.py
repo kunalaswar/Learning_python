@@ -22,8 +22,9 @@ if __name__ == '__main__':
     main()
 
 
+
 #! Single Application with Multiple views
 
 #* django-admin startproject maheshjobs
 #* py.manage.py startapp jobsapp
-#* Add Application to the settings.py file 
+#* Add Application to the settings.py file     

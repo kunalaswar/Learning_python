@@ -30,6 +30,7 @@ if __name__ == '__main__':
 #     path('third'/views.third_view)
 # ]
 
+
 #  include this app level urls.py inside project level urls py file
 # project level urls.py
 
