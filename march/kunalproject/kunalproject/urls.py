@@ -1,4 +1,4 @@
-"""multiappProject URL Configuration
+"""kunalproject URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -14,27 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from firstapp import views as v1
-from secondapp import views as v2
+from django.urls import path,include
 
-#first Approach
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('wish1/', v1.wish1),
-    path('wish2/', v2.wish2)
+    path('testapp/',include('testapp.urls') ),
 ]
-
-
-#Second Approach  Another Way 
-# from django.contrib import admin
-# from django.urls import path
-# from firstapp.views import wish1
-# from secondapp.views import wish2
-
-
-# urlpatterns = [
-#     path('admin/', admin.site.urls),
-#     path('wish1/', wish1),
-#     path('wish2/', wish2)
-# ]

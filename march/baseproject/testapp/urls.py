@@ -1,6 +1,7 @@
 
 #* Create a separate file urls.py inside the applications
-# urls.py
+#* projectlevelurls.py
+
 from django.urls import path
 from . import views
 
