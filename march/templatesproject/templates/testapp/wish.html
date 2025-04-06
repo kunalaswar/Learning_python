@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:red
+        }
+        h2{
+            color: blue;
+        }
+    </style>
+</head>
+
+ <!-- his template tag we have to place inside template file
+    (i.e html file)and we have to provide insert_date value from the python views.py file. --> 
+<!-- Application to send date and time from views.py to template file: -->
+<body>
+    <h1>Welcome to Django Templates Demo </h1>
+    <!-- <h2>Second Hero of Django in MVT: Templates </h2> -->
+    <h2>Hello guest Now the server time is :{{insert_date}}</h2>
+    
+    <!-- <h2>Now Server time is :{{insert_msg}}</h2> -->
+    <!-- <ol>
+        <li>Name:{{name}}</li>
+        <li>Marks:{{marks}}</li>
+        <li>RollNO:{{rollno}}</li>
+     </ol> -->
+</body>
+</html>
