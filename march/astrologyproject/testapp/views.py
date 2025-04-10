@@ -26,3 +26,5 @@ def result_view(request):
     my_dict ={'time':time,"name":msg,'wish':s}
     return render(request,template_name="testapp/astrology.html",context=my_dict)
 
+
+  
