@@ -18,9 +18,9 @@ from django.urls import path
 from testapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.news_info ), #! Not to give any urls then it pointing to the main page
+    path('',views.news_info ), #! Not to give any urls then it pointing to the main page automatially  
     path('movie/',views.movies_info ), 
     path('sports/',views.sports_info),
     path('politics/',views.politics_info), # Give this urls 'politics/' to index.html file 
                                            # <li><a href="politics/">Politics Information</a></li>
-]
+]                                          # 
