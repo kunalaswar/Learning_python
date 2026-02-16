@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+    
+</head>
+<body>
+    <h1>{{head_msg}}</h1>
+    <ul>
+        <li>{{sub_msg1}}</li>
+        <li>{{sub_msg2}}</li>
+        <li>{{sub_msg3}}</li>
+    </ul>
+    {% if type == 'movies' %}
+    <img src="{% static 'images/1movie.jpeg'%}" alt="">
+    <img src="{% static 'images/2movie.jpeg'%}" alt="">
+    <img src="{% static 'images/3movie.jpeg'%}" alt="">
+    <!-- <img src="{% static 'images\4sport.jpeg'%}" alt="">
+    <img src="{% static 'images\5sport.jpeg'%}" alt="">
+    <img src="{% static 'images\6sport.jpeg'%}" alt="">    WE Don't want like this 6 image we only wnat a 3 image per page -->
+    {% elif type == 'sports' %}      
+    <img src="{% static 'images/4sport.jpeg'%}" alt="">
+    <img src="{% static 'images/5sport.jpeg'%}" alt="">
+    <img src="{% static 'images/6sport.jpeg'%}" alt="">
+    
+    {% elif type == 'politics' %}
+    <img src="{% static 'images/7politics.jpeg'%}" alt="">
+    <img src="{% static 'images/8politics.jpeg'%}" alt="">
+    <img src="{% static 'images/9politics.jpeg'%}" alt="">
+    {% endif %}
+</body>
+</html>

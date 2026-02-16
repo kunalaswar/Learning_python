@@ -1,0 +1,66 @@
+Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #0d6efd;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Brand */
+.navbar > a {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: auto; /* pushes menu to right */
+}
+
+/* Navbar inner container */
+.navbar .container {
+    display: flex;
+}
+
+/* Navigation list */
+.navbar-nav {
+    display: flex;
+    flex-direction: row;   /* ✅ FORCE HORIZONTAL */
+    list-style: none;
+    gap: 20px;
+}
+
+/* Nav links */
+.navbar-nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover */
+.navbar-nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Active link */
+.navbar-nav li a.active {
+    background-color: #ffffff;
+    color: #0d6efd;
+}
+
+/* 🔥 Keep horizontal even on mobile */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: row;   /* ✅ NOT column */
+        gap: 12px;
+    }
+}

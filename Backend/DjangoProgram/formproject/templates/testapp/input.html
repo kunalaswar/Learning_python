@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Form</title>
+    <link rel="stylesheet" href="{% static 'css/form1.css' %}">
+</head>
+<body>
+    <h1>Students Input Form</h1>
+    <div class="container">
+        <form method="get" align="center">
+            {{ form_obj.as_p }}  <!--as_p is meaning is to add paragaraph into one after the another  -->
+            {% csrf_token %}
+            <button type="submit" name="" value="Submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+

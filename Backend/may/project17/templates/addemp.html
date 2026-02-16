@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD</title>
+</head>
+<body>
+    <form action="" method="post">
+        <!--* whenever you method is post you can put csrf_token -->
+        {%csrf_token%}
+        <table border="1" >
+            <!--* below line meaning is that you can insert this form as a table  -->
+            {{form.as_table}} 
+            <td><input type="submit" value="save"></td>
+
+
+        </table>
+    </form>
+    
+</body>
+</html>

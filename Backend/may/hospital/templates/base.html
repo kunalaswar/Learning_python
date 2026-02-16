@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Patient Appointment Management System</title>
+    <style> 
+    .nav{
+        margin: 10px;
+        width: 100%;
+        padding: 20px;
+        
+        background-color: aqua;
+    }
+    
+    span{
+            margin-left: 20px;
+    }
+    a{
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+    <span><a href="/doctoradd">Add Doctor </a></span>
+    <span><a href="/doctorlist">List Doctors</a></span>
+    <span><a href="/patientadd">Add Patient</a></span>
+    <span><a href="/patientlist">List Patients</a></span>
+    <span><a href="/appointment">Appointment</a></span>
+    <span><a href="/applist">AppointmentList</a></span>
+    {%block content%}
+    {%endblock%}  <!--this is for override   -->
+    </div>
+
+</body>
+</html>

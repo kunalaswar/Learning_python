@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1",width = "100%">
+        <tr>
+            <th>StudentName</th>
+            <th>subject1</th>
+            <th>subject2</th>
+            <th>subject3</th>
+        </tr>    
+        <!--We dont put the paranthesis () here -->
+        {%for name,sub in marks.items %}
+        <tr>
+            <td>{{name}}</td>
+            {%for s in sub %}
+            <td>{{s}}</td>
+            {%endfor%}
+        </tr>
+        {%endfor%}
+
+    </table>
+</body>
+</html>

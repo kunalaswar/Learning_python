@@ -1,0 +1,108 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+/* Headline */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #1e1e2f;
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Navigation links (index.html) */
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+    margin-top: 30px;
+}
+
+ul li {
+    background-color: #fff;
+    padding: 16px 28px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+ul li:hover {
+    background-color: #0d6efd;
+    color: #fff;
+    transform: translateY(-6px);
+}
+
+ul li a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #fff;
+}
+
+/* Images (news.html) */
+img {
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    margin: 25px auto;
+    border-radius: 14px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Animation for heading */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        width: 90%;
+        text-align: center;
+    }
+
+    img {
+        max-width: 95%;
+    }
+}

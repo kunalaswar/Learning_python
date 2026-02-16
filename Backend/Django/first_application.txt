@@ -1,0 +1,49 @@
+
+Activities required for application  
+------------------------------------------------------------------------------------------------------
+Activity-1: Add our application in setting.py so that Django aware your application .
+
+setting.py
+------------------
+INSTALLED_APPS=[
+    ---------
+    'firstapp'
+]
+
+
+Activity-2:
+    Create a view function for our application in views.py file
+    view is responsible to prepare required response to the end user. i.e view contains business logic.
+
+    there are 2-types of views:
+    1).function based views(FBVs)
+    2).class based view(CBVs)
+
+1. Each view will be specified as one function in views.py
+2. In the above program display is the name of the function which is nothing but one view.
+3. Each view should take at least one argument (request)
+4. Each view should return HttpResponse object with the required response.
+
+→ View can accept request as input and perform required operations
+ and provide proper response to the end user.
+
+
+Activity-3    
+ Define url- pattern for our view in urls.py
+ this url-pattern will be used by end user to send request for your view 
+
+urls.py
+--------------
+from firstapp import views
+urlpattern =[
+    path('admin/',admin.site.urls)
+    path('wish/',views.display)
+]
+    whenever End user sending the request with urlpattern :wish then display()
+    function will be executed and provided required response
+
+
+Activity-4:
+    start server send request
+    py manage.py runserver
+    https://127.0.0.1:8000/wish/

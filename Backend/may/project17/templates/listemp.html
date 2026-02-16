@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/addemp">Add Employee </a>
+    <table border="2" width="100%">
+        <tr>
+            <th>Empno</th>
+            <th>Ename</th>
+            <th>job</th>
+            <th>salary</th>
+            <th>For Edit</th>
+            <th>For Delete</th>
+        </tr>
+        {%for emp in qs%}
+        <tr>
+            <td> {{emp.empno}}</td> 
+            <td> {{emp.ename}}</td> 
+            <td> {{emp.job}}</td> 
+            <td> {{emp.sal}}</td> 
+            <td><a href="/update_view/{{emp.empno}}">Edit</a> </td> 
+            <td><a href="/delete_view/{{emp.empno}}">Delete</a> </td> 
+            
+            
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>

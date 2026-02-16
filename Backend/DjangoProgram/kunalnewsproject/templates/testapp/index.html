@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %} 
+<!-- Here load is the keyword and static is the folder -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <link rel="stylesheet" href="{% static 'css\demo.css' %}">  <!-- Always write like this always beacuse css file to add into the html file -->
+</head>
+<body>
+    <h1>Welcome to MAHESH NEWS portal</h1>
+    <img src="{% static 'images\news.jpeg'%}" alt="">
+    <ul>
+        <li><a href="movie/">Movies Information</a></li>  <!--this urls is same in urls.py file -->
+        <li><a href="sports/">Sports Information</a></li>
+        <li><a href="politics/">Politics Information</a></li> <!-- this urls is copy from urls.py file-->
+    </ul>
+
+</body>
+</html>

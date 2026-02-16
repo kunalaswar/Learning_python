@@ -1,0 +1,7 @@
+ac = Account()
+# # ac.getval()
+# print("Account number ",ac.acno)
+# print("Account Name ",ac.name)
+# print("Account Balance ",ac.bal)
+# print("Account pin ",ac.pin)
+# print("Account bank ",ac.bank)

@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+{%block content%}
+<table border="1" width="50%">
+<tr>
+    <th>Name</th>
+    <th>Specializations</th>
+    <th>Contact</th>
+    <th>Edit</th>
+    <th>Delete</th>
+</tr>    
+    {%for row in qs%}
+    <tr>
+        <td>{{row.name}}</td>
+        <td>{{row.specialization}}</td>
+        <td>{{row.contact}}</td>
+        <!-- <td><a href="/doctoredit">Edit</a></td> -->
+        <td><a href="{%url 'doctoredit' row.name%}">Edit</a></td><!--^ you can give dynamic url by using tag-->>
+        <td><a href="{%url 'doctordelete' row.name%}">Delete</a></td>
+    </tr>
+    {%endfor%}
+</table>
+{%endblock%}

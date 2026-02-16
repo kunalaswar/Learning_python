@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/fp.css' %}">
+</head>
+<body>
+    {% load cust_filters %}
+    {%for record in records %}
+        <h1>{{record.name}} Informations</h1>
+    <ul>
+        <li>Name:{{record.name |ffu:6}}</li> <!--^this is User defined Templates Filter -->
+        <li>Name:{{record.name |fnu}}</li> <!--^this is User defined Templates Filter -->
+        <li>Subject:{{record.subject|lower}}</li> <!--^this is Templates Filter this is predifined Templates filter -->
+        <li>Dept:{{record.dept |title}}</li>
+        <!-- <li>Date:{{record.date|date:'d-m-y'}}</li> -->
+        <li>Date:{{record.date|timesince}}</li>
+        <!-- <li>Date:{{record.date|date:'d/m/y'}}</li> -->
+         <!-- <li>Date:{{record.date | date:'d-b-Y'}}</li> -->
+        <!-- <li>Date:{{record.date | date:'l, F j, Y'}}</li> -->
+    </ul>
+    <hr>
+    {% endfor %}
+</body>
+</html>

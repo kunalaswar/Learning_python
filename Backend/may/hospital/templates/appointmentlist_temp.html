@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{%block content%}
+<table border="2">
+    {%for row in qs%}
+    <tr>
+        <td>{{row.doctor}}</td>
+        <td>{{row.patient}}</td>
+        <td>{{row.date}}</td>
+        <td>{{row.time}}</td>
+        <tr>{{row.description}}</tr>
+    </tr>
+    {%endfor%}
+</table>
+{%endblock%}

@@ -1,0 +1,55 @@
+
+
+        ================================================================================
+                    Students  Marks ANALYSIS Report 
+        ================================================================================
+
+Data set : studentsmarks1.csv
+ 
+Q * answer the following Question
+
+1.Display Alternative students record/details
+
+2.get the last five record 
+find the Number of record in a dataset and also find the number of columns ---------> shape[1] gives number of columns
+
+3.get the information about number of column and number of rows Datatype of Each column and Memory management 
+4.get the descriptive Statistics information on Non-numerical column and numerical column ---> describe include ="all
+5.before solving this Question calculate total marks percentage and grade 
+and Create the three column total percentage and grade and find the distincent students marks 
+6. find the total number of students how pass in the Distincent
+8.find the name of the students who pass with first and second grade --------> compound condition bitwise or 
+9. find the name of the person who secured highest percentage 
+10. find the name of the person who got less percentage 
+11. find the top 5 performance ------> percentage or highest grade any way you can take 
+sorting on total marks --- percentage decending tail ascending head
+
+12.find second highest students details in term of total marks 
+13. obtain top 5 highest score in maths and also other subject ---> maths highest science social science telegu and many more subject
+14.find the average marks with subject wise ---------> groupby and mean 
+15. Give 1.5 bonus marks to all maths students ---------> updation 
+16. Give 1.5 bonus marks to whose science marks ranges between 60 TO 80 students ---------> updation 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	

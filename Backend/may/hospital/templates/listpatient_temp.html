@@ -1,0 +1,26 @@
+<!--todo - we have copy save code here that we are written inside of listdoctor_temp.html -->
+{%extends 'base.html'%}
+{%block content%}
+<table border="1" width="50%">
+<tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Contact</th>
+    <th>Edit</th>
+    <th>Delete</th>
+</tr>    
+    {%for row in qs%}
+    <tr>
+        <td>{{row.name}}</td>
+        <td>{{row.age}}</td>
+        <td>{{row.gender}}</td>
+        <td>{{row.contact}}</td>
+        <!-- <td><a href="/doctoredit">Edit</a></td> -->
+        <td><a href="{%url 'patientedit' row.name%}">Edit</a></td><!--^ you can give dynamic url by using tag-->>
+        <td><a href="{%url 'patientdelete' row.name%}">Delete</a></td> <!--todo-we have sending namee and that perticular patient get delete -->
+
+    </tr>
+    {%endfor%}
+</table>
+{%endblock%} <!-- now then we have to create a view -->

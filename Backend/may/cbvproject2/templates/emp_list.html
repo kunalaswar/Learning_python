@@ -1,0 +1,26 @@
+.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" width = "100%">
+        <tr>
+            <th>Empno</th>
+            <th>Ename</th>
+            <th>Job</th>
+            <th>Salary</th> 
+        </tr>
+        {%for row in emp%} <!--* what is your query set objects is emp  -->
+        <tr>
+            <td>Empno</td>
+            <td>Ename</td>
+            <td>Job</td>
+            <td>Salary</td>
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>

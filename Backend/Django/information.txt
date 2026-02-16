@@ -1,0 +1,40 @@
+D:\PYTHON FULL STACK\Django\26_mar\firstproject>tree /f
+Folder PATH listing for volume New Volume
+Volume serial number is 08D5-9050
+D:.
+│   db.sqlite3
+│   manage.py
+│
+└───firstproject
+    │   asgi.py
+    │   settings.py
+    │   urls.py
+    │   wsgi.py
+    │   __init__.py
+    │
+    └───__pycache__
+            settings.cpython-311.pyc
+            urls.cpython-311.pyc
+            wsgi.cpython-311.pyc
+            __init__.cpython-311.pyc
+This above file is releated to the project level  this 5 file
+
+
+
+Folder PATH listing for volume New Volume
+Volume serial number is 08D5-9050
+D:.
+│   admin.py
+│   apps.py
+│   models.py
+│   tests.py
+│   views.py
+│   __init__.py
+│
+└───migrations
+        __init__.py
+
+
+app level folder are different          
+
+        

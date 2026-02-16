@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // By Using the JS DOM
+        // function bodyload() {
+        //     // window.document.images[0].src="https://sp.yimg.com/ib/th?id=OIP.0DADVKk6CpIoDh9TwqdAoQHaHa&pid=Api&w=148&h=148&c=7&dpr=2&rs=1";
+        //     window.document.images[0].src="../JAVASCRIPTEXAMPLE/sky.png";
+        //     window.document.forms[0].elements[1].value="Register";
+        //     window.document.forms[1].elements[1].value="Login";
+        // }
+
+        // By Using the referance name 
+        // function bodyload(){
+        //     pic.src="../JAVASCRIPTEXAMPLE/sky.png"
+        //     frmRegister.btnRegister.value="Register"; 
+        //     frmLogin.btnLogin.value="Login"
+        //  }
+        //  By Using the Unique ID
+        // function bodyload(){
+        //     document.getElementById( "pic").src = "../JAVASCRIPTEXAMPLE/sky.png"
+        //     document.getElementById("btnRegister").value="Register";
+        //     document.getElementById("btnLogin").value="Login"
+        // }
+
+        
+    </script>
+
+</head>
+<body onload="bodyload()">
+    <div>
+        <img  id="pic"  name="pic" border="1" width="100" height="100">
+    </div>
+    <div>
+        <h3>Register</h3>
+        <form name="frmRegister">
+            user name :<input type="email " name="txtEmail"> <input id="btnRegister"  name="btnRegister" type="button">
+
+
+        </form>
+    </div>
+    <div>
+        <h3>Login</h3>
+        <form name="frmLogin" >
+        Mobile: <input type="text" name="txtname"> <input id="btnLogin"  type="button" name="btnLogin">
+
+        </form>
+    </div>
+</body>
+</html>

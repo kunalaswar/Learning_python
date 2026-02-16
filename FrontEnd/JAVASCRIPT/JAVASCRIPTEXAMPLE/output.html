@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Another is this alert() to display the output
+        // function Deleteclick(){ 
+        //     // alert("Record will be deleated ")
+        //     flag=confirm("Record will be deleated \n Are you Sure?")
+        //     if (flag==true){
+        //         alert("record Deleated !")
+
+        //     }else{
+        //         alert("Cancled...!")
+        //     }
+        // }
+        // Another is this confirm() to display the output
+
+        // function Deleteclick(){
+        //     flag=confirm("Record will be deleated \n Are you Sure?")
+        //     if (flag==true){
+        //         confirm("record Deleated !")
+
+        //     }else{
+        //         confirm("Cancled...!")
+        //     }
+        // }
+
+        // Another is this document.write() to display the output
+        //     function Deleteclick(){
+        //     flag=confirm("Record will be deleated \n Are you Sure?")
+        //     if (flag==true){
+        //         document.write("<font size='5' color='red'> <b>record deleated</b><br><a href='output.html'>Back</a>")
+
+        //     }else{
+        //         confirm("Cancled...!")
+        //     }
+        // }
+        //
+        function Deleteclick(){
+            console.warn("Deleted Button clicked !")
+            flag=confirm("Record will be deleated \n Are you Sure?")
+            if (flag==true){
+                console.error("OK Confirmed - Deleted Processed")
+                // document.querySelector("p").innerText="Record Deleted"
+                // document.querySelector("p").innerText="<b>Record Deleted</b>"
+                // document.querySelector("p").innerHTML="<b><font>Record Deleted</font></b>"
+                document.querySelector("p").outerHTML="<b><font>Record Deleted</font></b>"
+                        // this will replace the <p></p> tag and go to this place
+
+
+            }else{
+                // confirm("Cancled...!")
+                console.info("cansole Clicked - Deleted Canceled")
+                document.querySelector("p").innerText="Cancled...!";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="Deleteclick()">Delete </button>
+    <p> </p>
+    
+</body>
+</html>

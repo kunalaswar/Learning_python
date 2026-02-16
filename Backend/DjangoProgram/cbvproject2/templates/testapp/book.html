@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>All Books Information Customiszed templates Files </h1>
+  {% for book in books %}
+  <ul>
+    <li>Title:<strong>{{book.title}}</strong></li>
+    <li>Author:<strong>{{book.author}}</strong></li>
+    <li>Pages:<strong>{{book.pages}}</strong></li>
+    <li>Price:<strong>{{book.price}}</strong></li>
+  </ul>
+  <hr>
+  {% endfor %}
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+  <h1>All Books Information</h1>
+  <ol>
+  {% for book in books %}
+     <li><a href="/{{book.id}}">{{book.title}}</a></li>
+  {% endfor %}   
+  </ol>
+</div>
+ <a class= "btn btn-primary" href="/create/{{book.id}}"> Insert New Book  </a>
+
+</body>
+</html>
+

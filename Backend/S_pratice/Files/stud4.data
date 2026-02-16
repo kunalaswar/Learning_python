@@ -1,0 +1,13 @@
+---------Inside of with Open as Indentation 
+File open in read moad Succesfully 
+IS File Closed=  False
+------------------------------------
+        File Opening Mode= stud4.data
+        File Opening Mode= x+
+        Can we Read the Data from File= True
+        can we write the Data to the file= True
+        Is File Closed= False
+
+Is File Closed after out-off with open() as Identation= True
+IS File Closed=  True
+PS D:\PYTHON FULL STACK\Practice\Files> 
